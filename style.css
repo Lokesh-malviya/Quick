@@ -1,0 +1,518 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('path-to-your-font/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.overlay-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 2;
+  /* Place the overlay image below */
+}
+
+.navbars {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: transparent;
+  /* Transparent background */
+  color: white;
+  z-index: 1000;
+
+}
+
+.left_logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  margin-right: 20px;
+}
+
+
+.btn-secondary{
+  display: none !important;
+  --bs-btn-bg: rgba(255, 255, 255, 0) !important;
+  --bs-btn-border-color: rgba(255, 255, 255, 0) !important;
+  --bs-btn-active-bg: rgba(255, 255, 255, 0) !important;
+   --bs-btn-active-border-color: rgba(255, 255, 255, 0) !important;
+   --bs-btn-active-shadow: rgba(255, 255, 255, 0) !important;
+   --bs-btn-hover-bg: rgba(255, 255, 255, 0) !important;
+    --bs-btn-hover-border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.logo_text {
+  font-size: 1.6rem;
+ /*  display: none; */
+ 
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 0.8;
+}
+
+.city_head {
+  /* color: #4D4D4D; */
+  color: rgba(255, 255, 255, 0);
+
+}
+
+.mountains_head {
+ /*  color: #3E4C69; */
+  color: rgba(255, 255, 255, 0);
+  letter-spacing: 1px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.bi{
+  display:none;
+  font-size: 1.5rem;
+}
+
+.tab0,
+.tab1 {
+  padding: 5px 15px;
+  font-size: 12px;
+  background-color: transparent;
+  /* Transparent background */
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  /* Always show underline */
+  font-family: 'Lato', sans-serif;
+  /* Use Lato font */
+}
+
+.text-container {
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 8.7rem;
+
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 0.8;
+  z-index: 1;
+
+}
+
+.city {
+  color: #4D4D4D;
+  letter-spacing: 0.5rem;
+
+}
+
+.mountains {
+  color: #3E4C69;
+  letter-spacing: 0.8rem;
+}
+
+
+
+
+.new-div {
+  position: absolute;
+  top: 100vh;
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.peak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heads {
+  position: absolute;
+  top: 15%;
+  /* Vertically center the text */
+  left: calc(40% - 100px);
+  /* Horizontally center the text */
+  transform: translate(-5%, -30%);
+
+}
+
+.heads_inside {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem;
+}
+
+.headings {
+  /* Adjust to fine-tune centering */
+  text-align: center;
+  color: #677794;
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  transform: translate(0%, 14%);
+}
+
+.sub_heads {
+  line-height: 0;
+}
+
+.sub_subheads {
+  text-align: center;
+  color: #3E4C69;
+
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.sub__subdot {
+
+  color: #677794;
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-left: 5rem;
+  margin-top: 1.56rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(62, 76, 105);
+  width: 43rem;
+  text-transform: lowercase;
+}
+.containersse {
+  width: 100vw;
+  height: 15rem;
+  background-color: rgb(62, 76, 105,0.8);
+  
+  
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel-item{
+  padding: 0rem 5rem 0rem 5rem;
+}
+.carousel-inner{
+  margin-top: 2rem;
+  height:10rem;
+  
+}
+.card{
+  height:10rem !important;
+ 
+}
+.carousel-indicators {
+ top: 11rem !important;
+}
+.ys{
+  height: inherit;
+  opacity: 2;
+}
+.second_div{
+  position:absolute;
+  top: 200vh;
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.head__head_inside{display: flex;
+  align-items: baseline;
+  }
+
+  .heads_insides{
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+  }
+.grey__div{
+  width:100vw;
+  height:72%;
+  background-color: #3E4C69;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.blue__div{
+  background-color: #3E4C69;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.buttons__div{
+  background-color: #3E4C69;
+  width: 65vw;
+  height: 3rem;
+}
+
+
+.mount {
+  padding: 10px 15px;
+  height: 3rem;
+  background-color: transparent;
+  /* Transparent background */
+
+  text-decoration: none;
+  font-size: 1.3rem;
+  /* Always show underline */
+  color: #AFB3BD;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  /* Use Lato font */
+}
+.mountain_number{
+  display: flex;
+  margin-left: 1rem;
+}
+/*  */
+
+.mount.active {
+  text-decoration: underline;
+  color: #3E4C69;
+  background-color: #AFB3BD;
+}
+.last_sec{
+  width:100vw ;
+  height: 63vh;
+}
+.schedule_table{
+  position:absolute;
+  top: 20%;
+  left: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+/* transform: translate(50%,50%) */;
+}
+
+.schedule {
+  display: none; /* Initially hide the schedule divs */
+  padding: 2rem;
+
+  margin-top: 10px;
+}
+
+.active-schedule {
+  display: block;
+  
+   /* Show the active schedule div */
+}
+.schedule__head{
+  color: #3E4C69;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  
+
+}
+
+.overall{
+  display: flex;
+}
+.right_bar{
+  margin-left:2rem;
+  align-items: flex-end;
+  display: flex;
+}
+.left_bar{
+  margin-right:1rem;
+}
+.footer {
+  background-color: rgb(62, 76, 105);
+  z-index: 2;
+ 
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: none; /* Initially hide the footer */
+}
+
+.footer_bet{
+  display:flex;
+  width: 100vw;
+    
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+}
+
+.es{
+  padding: 5px 15px;
+  font-size: 15px;
+  background-color: transparent;
+  /* Transparent background */
+  color: #61759E;
+  text-decoration: none;
+  
+  /* Always show underline */
+  font-family: 'Lato', sans-serif;
+}
+
+.logo1 {
+  width: 40px;
+  height: 40px;
+  background-color: #61759E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.city_head1{
+  color: #61759E;
+}
+.mountains_head1{
+  color: #61759E;
+    letter-spacing: 1px;
+}
+
+.logo_text1{
+  font-size: 1.6rem;
+
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 0.8;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+  .headings,.sub__subdot{
+    font-size:5rem;
+  }
+  .sub_subheads{
+    font-size: 1.5rem;
+  }
+  .description{
+    width:23rem;
+    font-size: 1rem;
+  }
+  .text-container{
+    font-size:4.5rem;
+    top: 47%;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 700px) {
+  .headings,.sub__subdot{
+    font-size:4rem;
+  }
+  .sub_subheads{
+    font-size: 1.5rem;
+  }
+  .description{
+    width:16rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+  }
+  .text-container{
+    font-size:2.5rem;
+    top: 30%;
+    left:50%;
+  }
+  .overlay-image{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .schedule{
+    padding: 0.7rem;
+  }
+  .schedule__head {
+    font-size:1.5rem;
+  }
+  .tab0,
+  .tab1{
+    display:none;
+  }
+  .btn-secondary,
+  .bi{
+    display:inline !important;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 380px) {
+  .headings.again,.sub__subdot.again{
+    font-size:3rem !important;
+  }
+  .sub_subheads.again{
+    font-size: 1rem;
+  }
+  .description.again{
+    width:15rem;
+    font-size: 0.7rem;
+    margin-left: 0rem;
+  }
+  .schedule_table{
+    left: 7%;
+  }
+  .buttons__div{
+    width:72rem;
+  }
+}
